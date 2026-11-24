@@ -1,0 +1,20 @@
+# barrier/report CSVs from the ~2.8 GB out/ directory are not published.
+# Regenerate with the scripts in this repo.
+
+# equity curves per bar (78–178 MB each)
+out/exec5m_equity_*.csv
+out/equity_*.csv
+
+# ablation trade logs beyond the ones kept
+out/exec5m_trades_*_A_tight_level.csv
+out/exec5m_trades_*_C_close_level.csv
+out/trades_smoke*.csv
+out/mfe_*.csv
+out/excursion_*.csv
+out/sweep_*.csv
+
+# market data and local caches
+market_data/
+__pycache__/
+*.pyc
+.venv/
